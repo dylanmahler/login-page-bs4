@@ -5,17 +5,17 @@ html,body {
 body.my-login-page {
 	background-color: #f7f9fb;
 	font-size: 14px;
+	display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .my-login-page .brand {
-	width: 90px;
-	height: 90px;
-	overflow: hidden;
-	border-radius: 50%;
-	margin: 40px auto;
-	box-shadow: 0 4px 8px rgba(0,0,0,.05);
-	position: relative;
-	z-index: 1;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .my-login-page .brand img {
@@ -23,7 +23,9 @@ body.my-login-page {
 }
 
 .my-login-page .card-wrapper {
-	width: 400px;
+	width: 512px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .my-login-page .card {
@@ -32,11 +34,11 @@ body.my-login-page {
 }
 
 .my-login-page .card.fat {
-	padding: 10px;
+	padding: 8px;
 }
 
 .my-login-page .card .card-title {
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 
 .my-login-page .form-control {
@@ -45,10 +47,11 @@ body.my-login-page {
 
 .my-login-page .form-group label {
 	width: 100%;
+	font-weight: 600;
 }
 
 .my-login-page .btn.btn-block {
-	padding: 12px 10px;
+	padding: 16px 8px;
 }
 
 .my-login-page .footer {
@@ -70,6 +73,6 @@ body.my-login-page {
 	}
 
 	.my-login-page .card.fat .card-body {
-		padding: 15px;
+		padding: 16px;
 	}
 }

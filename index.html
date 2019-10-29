@@ -14,18 +14,18 @@
 		<div class="container h-100">
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
-					<div class="brand">
-						<img src="img/logo.jpg" alt="logo">
-					</div>
 					<div class="card fat">
 						<div class="card-body">
-							<h4 class="card-title">Login</h4>
+							<!-- <h4 class="card-title">Login</h4> -->
+							<div class="brand">
+									<img class="logo" src="https://login.orionadvisor.com/api/v1/Public/Databases/1b5ebaec-fdf8-4cfd-bd02-45f006902f32/Image?entity=Administrator&entityId="/>
+							</div>
 							<form method="POST" class="my-login-validation" novalidate="">
 								<div class="form-group">
-									<label for="email">E-Mail Address</label>
+									<label for="email">Username</label>
 									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
 									<div class="invalid-feedback">
-										Email is invalid
+										Username is invalid
 									</div>
 								</div>
 
@@ -38,13 +38,13 @@
 									<input id="password" type="password" class="form-control" name="password" required data-eye>
 								    <div class="invalid-feedback">
 								    	Password is required
-							    	</div>
+									</div>
 								</div>
 
 								<div class="form-group">
 									<div class="custom-checkbox custom-control">
 										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
-										<label for="remember" class="custom-control-label">Remeber Me</label>
+										<label for="remember" class="custom-control-label">Remember this device</label>
 									</div>
 								</div>
 
@@ -58,9 +58,6 @@
 								</div>
 							</form>
 						</div>
-					</div>
-					<div class="footer">
-						Copyright &copy; 2017 &mdash; Your Company 
 					</div>
 				</div>
 			</div>
