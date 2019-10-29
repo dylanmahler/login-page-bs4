@@ -3,8 +3,8 @@ html,body {
 }
 
 body.my-login-page {
-	/* background-color: #f7f9fb; */
-	background-image: url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/80d33d45-91cb-4062-ab6d-1f11c8c21d09/BackgroundImage.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45LOH362QP%2F20191029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20191029T184042Z&X-Amz-Expires=86400&X-Amz-Security-Token=AgoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCHwrSdGpxVrxjJOZ8MYXj5uOTB7qH2zX36UNdKmHGyyoCIQCJPqGDAp3VDAPdAaqgGmOZkQ%2BcSpIixtDsE9IpPKqm%2BCqFBAim%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDI3NDU2NzE0OTM3MCIMIo9mmRxD7HR8yioEKtkDOsM1xpIM8CvWTNuU1rCuwo%2FuITwnQSgtngZgljGjCbLomQ%2F34C%2FnqngWQCFG%2Bo6rEGUKJYP7x0m3xJcyHeUOkHA5W3zpctFrMqbWxjeJfy1W0a9zs%2FgJWsBBE54kLTGoq9gbbV9scdJDvdYJ3b%2FuFDhkt%2FyN0cWBWpQFzh0j7bHZj3mXGnzME1CtZEIjLPJsv34ftYHU%2B46neRkjUoFoCABdKRmZ3UeBj2HbfhgDbNTNCemiSSutPtMHlNldsZgvhboMkUrBztBUekOlq%2BmfIbQzXAuPBj4rSODjRfWhqMmEMZqsvGaRURxRf0MrU0vpCShPLcAp58W2lfbMwFSdL6P9mGejmK24tfNCrkLcTqVURgsX%2Bvz6amcxBdUp32rSppIvST%2F7%2BHxbCRVL9BrYL%2Fd%2F1ZJiJ4CiawOW1Ju0ofvCM1k3SV%2BU9ewzWqvPi9dp%2F0t7jKllYGQ165RqeNOaG5KTUAeM7XXLGSta0MZo2zHgSxsGYyWUNDNeMt5Jc5j4APcgH3uPJ1gjw4%2F1bqP5ClC%2B76klupGYNig%2F0W2jQY%2BxijhWrbmwWHBcAYzOljbnDUjBmQHZJlR5OaScH%2FLTASxMQ1dir7kzJT7jM6VroZJTPgGQqDsePiYw3e3g7QU6tQFZuzi6LoOtT3gJdESM2UNp7JbqW%2Fo0a9Wz4G5Tshgkvs6LHxfHapcjT2g8MGKFK5Mo%2F%2B74myyUUsoY3t5%2B3OR4ZsIsFlqAPy3er9YPH1wphnP6gRP2wCn03q5MwoCzbOfGtLPhMpPlPzY9TorseZYGmoZjLBU2Pxaa0U6JmLE8IW6100d2tEvDYC9BG7hQxbbFZmvsJOD%2B6%2BzfIokXgGUpJpEFZJvFgFZcT4e4bJjvtwzF2ne%2B&X-Amz-Signature=c7686a5dbcb09090eb98b27ff3d434fb7b01eb03127b5eba0374d3ed1494b155&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22BackgroundImage.png%22");
+	background-color: #f7f9fb;
+	/* background-image: url("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/80d33d45-91cb-4062-ab6d-1f11c8c21d09/BackgroundImage.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAT73L2G45LOH362QP%2F20191029%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20191029T184042Z&X-Amz-Expires=86400&X-Amz-Security-Token=AgoJb3JpZ2luX2VjEJ3%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCHwrSdGpxVrxjJOZ8MYXj5uOTB7qH2zX36UNdKmHGyyoCIQCJPqGDAp3VDAPdAaqgGmOZkQ%2BcSpIixtDsE9IpPKqm%2BCqFBAim%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDI3NDU2NzE0OTM3MCIMIo9mmRxD7HR8yioEKtkDOsM1xpIM8CvWTNuU1rCuwo%2FuITwnQSgtngZgljGjCbLomQ%2F34C%2FnqngWQCFG%2Bo6rEGUKJYP7x0m3xJcyHeUOkHA5W3zpctFrMqbWxjeJfy1W0a9zs%2FgJWsBBE54kLTGoq9gbbV9scdJDvdYJ3b%2FuFDhkt%2FyN0cWBWpQFzh0j7bHZj3mXGnzME1CtZEIjLPJsv34ftYHU%2B46neRkjUoFoCABdKRmZ3UeBj2HbfhgDbNTNCemiSSutPtMHlNldsZgvhboMkUrBztBUekOlq%2BmfIbQzXAuPBj4rSODjRfWhqMmEMZqsvGaRURxRf0MrU0vpCShPLcAp58W2lfbMwFSdL6P9mGejmK24tfNCrkLcTqVURgsX%2Bvz6amcxBdUp32rSppIvST%2F7%2BHxbCRVL9BrYL%2Fd%2F1ZJiJ4CiawOW1Ju0ofvCM1k3SV%2BU9ewzWqvPi9dp%2F0t7jKllYGQ165RqeNOaG5KTUAeM7XXLGSta0MZo2zHgSxsGYyWUNDNeMt5Jc5j4APcgH3uPJ1gjw4%2F1bqP5ClC%2B76klupGYNig%2F0W2jQY%2BxijhWrbmwWHBcAYzOljbnDUjBmQHZJlR5OaScH%2FLTASxMQ1dir7kzJT7jM6VroZJTPgGQqDsePiYw3e3g7QU6tQFZuzi6LoOtT3gJdESM2UNp7JbqW%2Fo0a9Wz4G5Tshgkvs6LHxfHapcjT2g8MGKFK5Mo%2F%2B74myyUUsoY3t5%2B3OR4ZsIsFlqAPy3er9YPH1wphnP6gRP2wCn03q5MwoCzbOfGtLPhMpPlPzY9TorseZYGmoZjLBU2Pxaa0U6JmLE8IW6100d2tEvDYC9BG7hQxbbFZmvsJOD%2B6%2BzfIokXgGUpJpEFZJvFgFZcT4e4bJjvtwzF2ne%2B&X-Amz-Signature=c7686a5dbcb09090eb98b27ff3d434fb7b01eb03127b5eba0374d3ed1494b155&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22BackgroundImage.png%22"); */
 	background-size: cover;
 	font-size: 14px;
 	display: flex;
@@ -32,6 +32,7 @@ body.my-login-page {
 .my-login-page .card {
 	border-color: transparent;
 	box-shadow: 0 4px 32px rgba(0,0,0,.12);
+	border-radius: 8px;
 }
 
 .my-login-page .card.fat {
