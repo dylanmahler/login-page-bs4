@@ -38,9 +38,9 @@ $(function() {
 			id: 'passeye-toggle-'+i,
 		}).css({
 				position: 'absolute',
-				right: 10,
+				right: 8,
 				top: ($this.outerHeight() / 2) - 12,
-				padding: '2px 7px',
+				padding: '2px 8px',
 				fontSize: 12,
 				cursor: 'pointer',
 		}));
@@ -73,7 +73,7 @@ $(function() {
 		});
 	});
 
-	$(".my-login-validation").submit(function() {
+		$(".my-login-validation").submit(function() {
 		var form = $(this);
         if (form[0].checkValidity() === false) {
           event.preventDefault();
@@ -82,3 +82,4 @@ $(function() {
 		form.addClass('was-validated');
 	});
 });
+

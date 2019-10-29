@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Kodinger">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Login</title>
+	<title>My Login Page</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/my-login.css">
 </head>
@@ -16,12 +16,11 @@
 				<div class="card-wrapper">
 					<div class="card fat">
 						<div class="card-body">
-							<!-- <h4 class="card-title">Login</h4> -->
 							<div class="brand">
 									<img class="logo" src="https://login.orionadvisor.com/api/v1/Public/Databases/1b5ebaec-fdf8-4cfd-bd02-45f006902f32/Image?entity=Administrator&entityId="/>
 							</div>
+							<h4 class="card-title" style="text-align:center; padding-top: 16px;">Login</h4>
 							<form method="POST" class="my-login-validation" novalidate="">
-									<h4 class="card-title mb-4">Login</h4>
 								<div class="form-group">
 									<label for="username">Username</label>
 									<input id="username" type="username" class="form-control" name="username" value="" required autofocus>
@@ -31,21 +30,14 @@
 								</div>
 
 								<div class="form-group">
-									<label for="password">Password</label>
+									<label for="password">Password
+										<a href="forgot.html" class="float-right">
+											Forgot Password?
+										</a>
+									</label>
 									<input id="password" type="password" class="form-control" name="password" required data-eye>
 								    <div class="invalid-feedback">
-								    	Password is required
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="custom-checkbox custom-control">
-										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
-										<label for="remember" class="custom-control-label">Remember this device
-												<a href="forgot.html" class="mt-0 float-right">
-														Forgot password?
-												</a>
-										</label>
+								    	This password has previously appeared in a data breach of another site. You can change it now, or change it on your next login. You should also change it anywhere else you may have used this password.
 									</div>
 								</div>
 
@@ -54,9 +46,18 @@
 										Login
 									</button>
 								</div>
-								<div class="mt-4 text-center">
-									Don't have an account? <a href="register.html">Create one</a>
+								<div>
+								<div class="mt-2 text-left">
+										<div class="custom-checkbox custom-control">
+											<input type="checkbox" name="remember" id="remember" class="custom-control-input">
+											<label for="remember" class="custom-control-label">Remember this device</label>
+										</div>
+									</div>
+
+								<div class="mt-2 text-right">
+									Don't have an account? <a href="register.html">Create One</a>
 								</div>
+	
 							</form>
 						</div>
 					</div>

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Kodinger">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>My Login Page &mdash; Bootstrap 4 Login Page Snippet</title>
+	<title>Login</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/my-login.css">
 </head>
@@ -21,30 +21,43 @@
 						</div>
 							<form method="POST" class="my-login-validation" novalidate="">
 								<div class="form-group">
-									<label for="name">Name</label>
-									<input id="name" type="text" class="form-control" name="name" required autofocus>
+									<label for="username">Username</label>
+									<input id="username" type="text" class="form-control" name="username" required autofocus>
 									<div class="invalid-feedback">
-										What's your name?
+										Please create a username
 									</div>
 								</div>
 
 								<div class="form-group">
-									<label for="email">E-Mail Address</label>
-									<input id="email" type="email" class="form-control" name="email" required>
+									<label for="ssn">SSN</label>
+									<input id="ssn" type="email" class="form-control" name="SSN" required>
 									<div class="invalid-feedback">
-										Your email is invalid
+										Invalid SSN
 									</div>
 								</div>
 
 								<div class="form-group">
-									<label for="password">Password</label>
-									<input id="password" type="password" class="form-control" name="password" required data-eye>
+									<label for="account">Account #</label>
+									<input id="account" type="account" class="form-control" name="account" required data-eye>
 									<div class="invalid-feedback">
-										Password is required
+										Account is required
 									</div>
 								</div>
 
 								<div class="form-group">
+										<label for="securityQuestion">Security Question</label>
+										<select class="form-control" id="inputGroupSelect01">
+												<option selected>Choose...</option>
+												<option value="1">What's the name of your first dog?</option>
+												<option value="2">In what city or town was your first job?</option>
+												<option value="3">What school did you attend for sixth grade?</option>
+											  </select>
+										<div class="invalid-feedback">
+											Security question not selected
+										</div>
+									</div>
+
+								<!-- <div class="form-group">
 									<div class="custom-checkbox custom-control">
 										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
 										<label for="agree" class="custom-control-label">I agree to the <a href="#">Terms and Conditions</a></label>
@@ -52,7 +65,15 @@
 											You must agree with our Terms and Conditions
 										</div>
 									</div>
-								</div>
+								</div> -->
+
+								<div class="form-group">
+										<label for="securityAnswer">Security Answer</label>
+										<input id="securityAnswer" type="securityAnswer" class="form-control" name="securityAnswer" required data-eye>
+										<div class="invalid-feedback">
+											Invalid security answer
+										</div>
+									</div>
 
 								<div class="form-group m-0">
 									<button type="submit" class="btn btn-primary btn-block">
@@ -70,6 +91,8 @@
 		</div>
 	</section>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="js/my-login.js"></script>
