@@ -62,6 +62,10 @@ body.my-login-page {
 	text-align: center;
 }
 
+.my-login-page .progress-bar {
+	width: 25%
+}
+
 @media screen and (max-width: 425px) {
 	.my-login-page .card-wrapper {
 		width: 90%;
