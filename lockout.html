@@ -19,44 +19,15 @@
 							<div class="brand">
 									<img class="logo" src="https://login.orionadvisor.com/api/v1/Public/Databases/1b5ebaec-fdf8-4cfd-bd02-45f006902f32/Image?entity=Administrator&entityId="/>
 							</div>
-							<h5 class="card-title my-2">Login</h5>
-							<form method="POST" class="my-login-validation" novalidate="">
-								<div class="form-group">
-									<label for="username">Username</label>
-									<input id="username" type="username" class="form-control" name="username" value="" required autofocus>
-									<div class="invalid-feedback">
-										Username is invalid
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="password">Password</label>
-									<input id="password" type="password" class="form-control" name="password" required data-eye>
-								    <div class="invalid-feedback">
-								    	Password is required
-									</div>
-								</div>
-
-								<div class="form-group">
-									<div class="custom-checkbox custom-control">
-										<input type="checkbox" name="remember" id="remember" class="custom-control-input">
-										<label for="remember" class="custom-control-label">Remember this device
-												<a href="forgot.html" class="mt-0 float-right">
-														Forgot password?
-												</a>
-										</label>
-									</div>
-								</div>
-
-								<div class="form-group m-0">
-									<button type="submit" class="btn btn-primary btn-block" onclick="location.href='delivery.html';">
-										Login
-									</button>
-								</div>
-								<div class="mt-4 text-center">
-									Don't have an account? <a href="register.html">Create one</a>
-								</div>
-							</form>
+							<div class="alert alert-danger mt-2" role="alert">
+								Unavailable due to too many failed attempts. Please try again after the lockout period.
+							  </div>
+							<div class="text-center p-4 mt-4 rounded" id="lockoutTimer">
+								<ul class="p-0 mb-0">
+									<li class="d-inline-block mx-2 text-secondary"><h4><span class="d-block" id="minutes"></h4></span>Minutes</li>
+									<li class="d-inline-block mx-2 text-secondary"><h4><span class="d-block" id="seconds"></h4></span>Seconds</li>
+								  </ul>
+							</div>
 						</div>
 					</div>
 				</div>
