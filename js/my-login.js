@@ -106,11 +106,10 @@ let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
           document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
       
-      //do something later when date is reached
-      //if (distance < 0) {
-      //  clearInterval(x);
-      //  'IT'S MY BIRTHDAY!;
-      //}
+      if (distance < 0) {
+       clearInterval(x);
+       'Lockout period has resided. Please try logging in.';
+      }
 
     }, second)
 });
