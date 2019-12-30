@@ -33,7 +33,7 @@ $(function() {
 			paddingRight: 60
 		});
 		$this.after($("<div/>", {
-			html: 'Show',
+			html: '<i class="fas fa-eye"></i>',
 			class: 'btn btn-primary btn-sm',
 			id: 'passeye-toggle-'+i,
 		}).css({
@@ -97,7 +97,7 @@ $(document).ready(function(){
       minute = second * 60,
       hour = minute * 60;
 
-let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+let countDown = new Date('Jul 30, 2020 00:00:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
